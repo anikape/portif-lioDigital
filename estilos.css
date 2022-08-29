@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Pacifico&display=swap');
+body {
+    background-color: rgba(155, 141, 171, 67);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(64, 4, 104);
+}
+
+header h1 {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Pacifico', sans-serif;
+}
+
+header img {
+    width: 100px;
+    display: flex;
+}
+
+#burguer {
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+}
+
+#burguer:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.navegation li {
+    list-style-type: none;
+    font-size: 0.6rem;
+}
+
+menu {
+    display: none;
+    /*Como é um menu hamburguer, a lista precisa estar oculta*/
+}
+
+menu a {
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    color: white;
+}
