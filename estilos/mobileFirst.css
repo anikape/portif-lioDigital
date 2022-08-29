@@ -26,11 +26,11 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.842);
+    background-color: rgba(233, 27, 188, 0.842);
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.842);
+    /*background-color: rgba(255, 255, 255, 0.842);*/
     width: 90vw;
     margin: auto;
     /*Com essas configurações o conteúdo irá ficar centralizado e com as bordas sendo a imagem de fundo*/
@@ -43,4 +43,76 @@ main {
     width: 70vw;
     height: 60vh;
     margin: auto;
+}
+
+
+/* Todas as demais midias*/
+
+
+/*Typical Breakpoints
+Pequenas telas: até 600px
+celular: 600px até 768px (até aqui é são as configurações que aparecem no arquivo mobileFirst.css
+tablet: 768px até 992px
+Descktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+
+/*Configurações para pequenas telas*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #video-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 70vh;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    main {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width:1199px) {
+    main {
+        width: 100%;
+    }
+    section {
+        display: flex;
+        gap: 50px;
+        /* gap - distância entre os elementos*/
+        padding-left: 20px;
+        align-items: center;
+    }
+    h2 {
+        font-size: 1rem;
+        display: inline;
+        float: right;
+    }
+    iframe {
+        border: none;
+        position: relative;
+        margin-top: 20px;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 40%;
+    }
+}
+
+
+/*Tela para Impressão*/
+
+@media print {
+    /*background-image: ; para impressoesas essa configuração n funciona*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    iframe {
+        display: none;
+    }
 }
