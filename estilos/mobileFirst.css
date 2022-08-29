@@ -35,3 +35,12 @@ main {
     margin: auto;
     /*Com essas configurações o conteúdo irá ficar centralizado e com as bordas sendo a imagem de fundo*/
 }
+
+#video-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 60vh;
+    margin: auto;
+}

@@ -1,0 +1,56 @@
+         @charset "UTF-8";
+         /* Todas as demais midias*/
+         /*Typical Breakpoints
+Pequenas telas: até 600px
+celular: 600px até 768px (até aqui é são as configurações que aparecem no arquivo mobileFirst.css
+tablet: 768px até 992px
+Descktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+         /*Configurações para pequenas telas*/
+         
+         @media screen and (min-width: 768px) and (max-width: 992px) {
+             #video-content {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 width: 80vw;
+                 height: 70vh;
+                 margin: auto;
+             }
+         }
+         
+         @media screen and (min-width: 992px) and (max-width: 1200px) {
+             main {
+                 width: 700px;
+             }
+         }
+         
+         @media screen and (min-width:1200px) {
+             main {
+                 width: 100%;
+             }
+             section {
+                 width: 1000px;
+                 display: flex;
+                 gap: 50px;
+                 /* gap - distância entre os elementos*/
+                 padding-left: 20px;
+                 align-items: center;
+             }
+             h2 {
+                 font-size: 1rem;
+             }
+             iframe {
+                 background-color: rgba(255, 255, 255, 0.842);
+                 border: none;
+                 position: relative;
+                 top: 0;
+                 left: 0;
+                 width: 50%;
+                 height: 50%;
+             }
+         }
+         /*Tela para Impressão*/
+         
+         @media print {}
